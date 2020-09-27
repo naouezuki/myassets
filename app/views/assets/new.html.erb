@@ -1,0 +1,11 @@
+<div class = "contents low">
+  <%= form_tag('/assets', method: :post) do %>
+    <h3>
+      作成する
+    </h3>
+    <input placeholder='目的' type='text' name='name'>
+    <input placeholder='目標金額' type='text' name='price'>
+    <input placeholder='達成までの期間' type='text' name='period'>
+    <input type='submit' value='START'>
+  <% end %>
+</div>
