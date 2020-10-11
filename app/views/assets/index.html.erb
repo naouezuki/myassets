@@ -3,5 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>MY ASSETS</title>
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
   </head>
+
+  <body>
+    <title> MY ASEETS </title>
+    <div class="contents row">
+      <p><% @assets.each do |assets| %>
+      <%= render partial: "assets/asset", locals: { asset: asset } %>
+        <% end %>
+      
+      </p>
+    </div>
+  </body>
